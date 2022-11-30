@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/bootstrap-5.2.1-dist/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap-5.2.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.2.0-web/css/brands.min.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.2.0-web/css/fontawesome.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.2.0-web/css/regular.min.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.2.0-web/css/solid.min.css">
+    <link rel="stylesheet" href="./assets/css/myStyle.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- #region navbar -->
+    <nav class="myNav navbar navbar-expand-md navbar-dark bg-primary px-3 fs-5 fixed-top
+    d-flex justify-content-between align-items-center">
+        <div class="d-flex justify-content-center align-items-center">
+            <a class="navbar-brand" href="#">
+                <i class="fa-sharp fa-solid fa-fingerprint fs-1 me-2"></i>
+            </a>
+
+            <ul class="navbar-nav d-none d-md-flex">
+                <li><a class="nav-link" href="#">Home</a></li>
+                <li><a class="nav-link" href="#">Account</a></li>
+                <li><a class="nav-link" href="#">Articles</a></li>
+            </ul>
+        </div>
+
+        <button class="btn btn-primary border-light px-3 py-2 d-block d-md-none" id="navbar-trigger">
+            <i class="fa-solid fa-bars fs-3"></i>
+        </button>
+    </nav>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg-nav d-none d-md-block">
+        <path fill="#0d6efd" fill-opacity="1"
+            d="M0,32L40,53.3C80,75,160,117,240,117.3C320,117,400,75,480,90.7C560,107,640,181,720,176C800,171,880,85,960,64C1040,43,1120,85,1200,85.3C1280,85,1360,43,1400,21.3L1440,0L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z">
+        </path>
+    </svg>
+    <!-- <div class="nav-space"></div> -->
+
+    <!-- Start hidden navbar -->
+    <div class="hidden-nav-base">
+        <div class="hidden-nav fs-4">
+            <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center">
+                <li class="my-2"><a class="nav-link" href="#">Home</a></li>
+                <li class="my-2"><a class="nav-link" href="#">Account</a></li>
+                <li class="my-2"><a class="nav-link" href="#">Articles</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- End hidden navbar -->
+    <!-- #endregion navbar -->
+
+
+    <!-- #region main -->
+    <main class="main-section">
+        <!-- #region slider -->
+        <div class="mb-5">
+            <div class="carousel slide" id="main-slider" data-bs-ride="carousel" data-bs-interval="true">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./assets/pics/Slider/1.jpg" alt="" class="slider-img" />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./assets/pics/Slider/2.jpg" alt="" class="slider-img" />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./assets/pics/Slider/3.jpg" alt="" class="slider-img" />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./assets/pics/Slider/4.jpg" alt="" class="slider-img" />
+                    </div>
+                </div>
+
+                <div class="carousel-indicators text-center">
+                    <button class="active" data-bs-target="#main-slider" data-bs-slide-to="0"></button>
+                    <button data-bs-target="#main-slider" data-bs-slide-to="1"></button>
+                    <button data-bs-target="#main-slider" data-bs-slide-to="2"></button>
+                    <button data-bs-target="#main-slider" data-bs-slide-to="3"></button>
+                </div>
+
+                <button class="carousel-control-prev" data-bs-target="#main-slider" data-bs-slide="prev">
+                    <span class="btn btn-success rounded-circle p-3 d-flex">
+                        <i class="carousel-control-prev-icon"></i>
+                    </span>
+                </button>
+
+                <button class="carousel-control-next" data-bs-target="#main-slider" data-bs-slide="next">
+                    <span class="btn btn-success rounded-circle p-3 d-flex">
+                        <i class="carousel-control-next-icon"></i>
+                    </span>
+                </button>
+            </div>
+        </div>
+        <!-- #endregion slider -->
+
+        <div class="myDivider"></div>
+
+        <!-- #region cards -->
+        <div class="container mt-4 mb-5">
+            <h2 class="text-center mb-4">
+                <span class="border border-2 border-primary px-5 py-2 rounded-4">Recent Articles</span>
+            </h2>
+            <div class="row">
+                <div class="col-12 col-md-4 px-3 py-1 my-2">
+                    <div class="card text-center">
+                        <img src="./assets/pics/2137.jpg" class="card-img-top" alt="" />
+                        <div class="card-body">
+                            <h5 class="card-title fs-4 mb-3">card title</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae dignissimos vitae
+                                cum
+                                obcaecati aliquam incidunt itaque commodi aliquid libero ex.
+                            </p>
+                            <p class="card-text text-muted">
+                                <a href="#" class="card-link text-reset text-decoration-none">
+                                    Read More
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 px-3 py-1 my-2">
+                    <div class="card text-center">
+                        <img src="./assets/pics/2137.jpg" class="card-img-top" alt="" />
+                        <div class="card-body">
+                            <h5 class="card-title fs-4 mb-3">card title</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae dignissimos vitae
+                                cum
+                                obcaecati aliquam incidunt itaque commodi aliquid libero ex.
+                            </p>
+                            <p class="card-text text-muted">
+                                <a href="#" class="card-link text-reset text-decoration-none">
+                                    Read More
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 px-3 py-1 my-2">
+                    <div class="card text-center">
+                        <img src="./assets/pics/2137.jpg" class="card-img-top" alt="" />
+                        <div class="card-body">
+                            <h5 class="card-title fs-4 mb-3">card title</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae dignissimos vitae
+                                cum
+                                obcaecati aliquam incidunt itaque commodi aliquid libero ex.
+                            </p>
+                            <p class="card-text text-muted">
+                                <a href="#" class="card-link text-reset text-decoration-none">
+                                    Read More
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #endregion cards -->
+
+        <div class="myDivider"></div>
+
+        <!-- #region imaged cards -->
+        <div class="container mt-4 mb-5">
+            <h2 class="text-center mb-4">
+                <span class="border border-2 border-primary px-5 py-2 rounded-4">Team Members</span>
+            </h2>
+            <div class="row">
+                <div class="col-12 col-md-4 px-3 py-1 my-2">
+                    <div class="card">
+                        <div class="card-header position-relative p-0">
+                            <img src="./assets/pics/f581a32e-8304-4775-bdab-4cfcde3ba06e.avif" class="img-fluid" alt="">
+                            <div class="card-icons-container rounded-pill">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text fs-4">
+                                Ehsan Aryan
+                                <br />
+                                <small class="text-muted fs-5">
+                                    Front-End Developer
+                                </small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 px-3 py-1 my-2">
+                    <div class="card">
+                        <div class="card-header position-relative p-0">
+                            <img src="./assets/pics/f581a32e-8304-4775-bdab-4cfcde3ba06e.avif" class="img-fluid" alt="">
+                            <div class="card-icons-container rounded-pill">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text fs-4">
+                                Ehsan Aryan
+                                <br />
+                                <small class="text-muted fs-5">
+                                    Front-End Developer
+                                </small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 px-3 py-1 my-2">
+                    <div class="card">
+                        <div class="card-header position-relative p-0">
+                            <img src="./assets/pics/f581a32e-8304-4775-bdab-4cfcde3ba06e.avif" class="img-fluid" alt="">
+                            <div class="card-icons-container rounded-pill">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text fs-4">
+                                Ehsan Aryan
+                                <br />
+                                <small class="text-muted fs-5">
+                                    Front-End Developer
+                                </small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #endregion imaged cards -->
+
+        <div class="myDivider"></div>
+
+        <!-- #region comment cards -->
+        <div class="container mt-4 mb-5">
+            <h2 class="text-center mb-4 ">
+                <span class="border border-2 border-primary px-5 py-2 rounded-4">Some Comments</span>
+            </h2>
+            <div class="row">
+                <div class="col-12 col-md-4 px-3 py-1 my-2">
+                    <div class="card">
+                        <div class="card-header text-center pt-3">
+                            <img src="./assets/pics/poker-face_202581-88_2.jpg" class="img-fluid rounded-circle w-50"
+                                alt="">
+                            <div class="fs-5 mt-2">Ehsan Aryan</div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae dignissimos vitae
+                                cum
+                                obcaecati aliquam incidunt itaque commodi aliquid libero ex.
+                            </p>
+                            <hr />
+                            <p class="card-text text-center">
+                                <i class="fa-solid fa-star star-icons"></i>
+                                <i class="fa-solid fa-star star-icons"></i>
+                                <i class="fa-solid fa-star star-icons"></i>
+                                <i class="fa-solid fa-star star-icons"></i>
+                                <i class="fa-solid fa-star star-icons"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 px-3 py-1 my-2">
+                    <div class="card">
+                        <div class="card-header text-center pt-3">
+                            <img src="./assets/pics/poker-face_202581-88_2.jpg" class="img-fluid rounded-circle w-50"
+                                alt="">
+                            <div class="fs-5 mt-2">Ehsan Aryan</div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae dignissimos vitae
+                                cum
+                                obcaecati aliquam incidunt itaque commodi aliquid libero ex.
+                            </p>
+                            <hr />
+                            <p class="card-text text-center">
+                                <i class="fa-solid fa-star star-icons"></i>
+                                <i class="fa-solid fa-star star-icons"></i>
+                                <i class="fa-solid fa-star star-icons"></i>
+                                <i class="fa-solid fa-star star-icons"></i>
+                                <i class="fa-solid fa-star star-icons"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 px-3 py-1 my-2">
+                    <div class="card">
+                        <div class="card-header text-center pt-3">
+                            <img src="./assets/pics/poker-face_202581-88_2.jpg" class="img-fluid rounded-circle w-50"
+                                alt="">
+                            <div class="fs-5 mt-2">Ehsan Aryan</div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae dignissimos vitae
+                                cum
+                                obcaecati aliquam incidunt itaque commodi aliquid libero ex.
+                            </p>
+                            <hr />
+                            <p class="card-text text-center">
+                                <i class="fa-solid fa-star star-icons"></i>
+                                <i class="fa-solid fa-star star-icons"></i>
+                                <i class="fa-solid fa-star star-icons"></i>
+                                <i class="fa-solid fa-star star-icons"></i>
+                                <i class="fa-solid fa-star star-icons"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #endregion comment cards -->
+
+        <div class="myDivider"></div>
+
+        <!-- #region contact info -->
+        <div class="container mt-4 mb-5">
+            <div class="text-center fs-4 text-primary my-3">
+                If you need help, just contact us!
+            </div>
+            <div class="d-flex justify-content-center align-items-center my-2">
+                <a class="btn btn-primary rounded-circle phone-icon 
+                d-flex justify-content-center align-items-center"
+                href="tel:+989197777777">
+                    <i class="fa-solid fa-phone fs-4 fa-shake"></i>
+                </a>
+            </div>
+            <div class="text-center my-2">
+                <a href="tel:+989197777777" class="text-decoration-none text-primary 
+                fs-4">
+                    +989197777777
+                </a>
+            </div>
+        </div>
+        <!-- #endregion contact info -->
+
+
+    </main>
+    <!-- #endregion main -->
+
+    <!-- #region footer -->
+    <footer class="page-footer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg-footer">
+            <path fill="#0d6efd" fill-opacity="1"
+                d="M0,128L40,117.3C80,107,160,85,240,96C320,107,400,149,480,170.7C560,192,640,192,720,170.7C800,149,880,107,960,122.7C1040,139,1120,213,1200,229.3C1280,245,1360,203,1400,181.3L1440,160L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z">
+            </path>
+        </svg>
+        <div class="text-bg-primary pt-4 footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-3 pe-4 text-center mt-1 mb-5">
+                        <div class="fs-2"><i class="fa-regular fa-copyright"></i></div>
+                        <div>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga eligendi atque consequatur
+                            accusantium, quis porro dolorum, omnis ex sapiente.
+                        </div>
+                        <div class="d-flex justify-content-evenly align-items-center mt-4 fs-5">
+                            <i class="fa-brands fa-instagram footer-icons"></i>
+                            <i class="fa-brands fa-twitter footer-icons"></i>
+                            <i class="fa-brands fa-facebook footer-icons"></i>
+                            <i class="fa-brands fa-whatsapp footer-icons"></i>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 ps-5 mt-1 mb-5">
+                        <div class="fs-3 mb-4">Contact us</div>
+                        <ul class="list-unstyled fs-6">
+                            <li class="my-2">
+                                <i class="fa-solid fa-phone me-2"></i>
+                                +989197777777
+                            </li>
+                            <li class="my-2">
+                                <i class="fa-solid fa-envelope me-2"></i>
+                                example@test.com
+                            </li>
+                            <li class="my-2">
+                                <i class="fa-brands fa-internet-explorer me-2"></i>
+                                wwww.testname.org
+                            </li>
+                            <li class="my-2">
+                                <i class="fa-solid fa-location-dot me-2"></i>
+                                Iran, Qom, Imam Street, third floor
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-3 px-2 text-center mt-1 mb-2">
+                        <div class="fs-3 mb-4">Title</div>
+                        <ul class="list-unstyled fs-6">
+                            <li class="my-2">Item 1</li>
+                            <li class="my-2">Item 2</li>
+                            <li class="my-2">Item 3</li>
+                            <li class="my-2">Item 4</li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-3 px-2 text-center mt-1 mb-2">
+                        <div class="fs-3 mb-4">Title</div>
+                        <ul class="list-unstyled fs-6">
+                            <li class="my-2">Item 1</li>
+                            <li class="my-2">Item 2</li>
+                            <li class="my-2">Item 3</li>
+                            <li class="my-2">Item 4</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="px-4 pt-4 pb-2 text-center fs-5">
+                <hr />
+                Thanks for your attention.
+            </div>
+        </div>
+    </footer>
+    <!-- #endregion footer -->
+
+    <script src="./assets/bootstrap-5.2.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/jsCodes.js"></script>
+</body>
+
+</html>
