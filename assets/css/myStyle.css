@@ -143,6 +143,12 @@
     }
 }
 
+@media screen and (max-width : 768px) {
+    .main-section {
+        margin-top: 70px;
+    }
+}
+
 .myDivider::after {
     content: "";
     display: block;
