@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "BYekan";
+    src: url("../Fonts/BYekan/BYekan-webfont.eot") format("eot") ,
+    url("../Fonts/BYekan/BYekan-webfont.woff") format("woff") ,
+    url("../Fonts/BYekan/BYekan-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal
+}
+
+*:not(i) {
+    font-family: "BYekan" !important;
+}
+
+
+/* Start Navbar */
+.hidden-nav {
+    --hidden-navbar-width : 70%;
+    left: calc(-1 * var(--hidden-navbar-width));
+}
+
+@keyframes showNavbarBase {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes hideNavbarBase {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes showHiddenNavbar {
+    from {
+        right: calc(-1 * var(--hidden-navbar-width));
+    }
+
+    to {
+        right : 0px;
+    }
+}
+
+@keyframes hideHiddenNavbar {
+    from {
+        right : 0px;
+    }
+
+    to {
+        right: calc(-1 * var(--hidden-navbar-width));
+    }
+}
+/* End Navbar */
