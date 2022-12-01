@@ -156,7 +156,7 @@
     height: 5px;
     background-color: rgb(13, 110, 253);
     border-radius: 10px;
-    margin: 5.5rem auto 1rem;
+    margin: 6rem auto 1rem;
 }
  
 
@@ -173,10 +173,30 @@
 
 
 /* Start Cards */
-.card {
+.grey-box-shadow {
     box-shadow: 0px 0px 5px grey;
 }
 /* End Cards */
+
+
+/* Start Sample Work */
+.sample-work {
+    border: none !important;
+    width: 75%;
+}
+
+@media screen and (max-width : 992px) {
+    .sample-work {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .sample-work {
+        width: 75%;
+    }
+}
+/* End Sample Work */
 
 
 /* Start Imaged Cards */
