@@ -16,7 +16,7 @@
 /* Start Navbar */
 .hidden-nav {
     --hidden-navbar-width : 70%;
-    left: calc(-1 * var(--hidden-navbar-width));
+    right: calc(-1 * var(--hidden-navbar-width));
 }
 
 @keyframes showNavbarBase {
